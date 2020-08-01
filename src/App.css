@@ -1,38 +1,259 @@
-.App {
+/* DEFAULT TAGS */
+
+a {
+  color: #00B04F;
+  text-decoration: underline;
+}
+
+/* LANDING SECTION */
+
+#landing {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./img/hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#content {
+  margin-top: 10vh;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#logo {
+  width: 12em;
+  margin-top: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.add-button {
+  background-color: #00B04F;
+  border-color: #00B04F;
+  font-size: 1em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.add-button:hover {
+  background-color: #ffffff;
+  border-color: #00B04F;
+  color: #00B04F;
+}
+
+/* HOW IT WORKS SECTION */
+
+#how-it-works {
+  height: auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+/* AFFILIATE STORES SECTION */
+
+#affiliate-stores {
+  background-color: #EAF6FA;
+  height: 80vh;
+  text-align: center;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+  background-color: white;
+  height: 50vw;
+}
+
+/* TESTIMONIAL SECTION */
+
+#testimonials {
+  padding-top: 5vw;
+  text-align: center;
+  background-color: #EAF6FA;
+  height: auto;
+}
+
+.testimonial {
+  padding-top: 5vw;
+  width: 30vw;
+  padding-bottom: 5vw;
+  margin-left: 35vw;
+  ;
+}
+
+.text {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0C3C2A;
+}
+
+.text h3 {
+  font-weight: 700;
+}
+
+.carousel-indicators li {
+  background-color: #797979;
+ 
+}
+
+.carousel-indicators .active {
+  background-color: #029149;
+
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 10vw;
+}
+
+/* QUESTIONS SECTION */
+
+#questions {
+  padding: 5vh 30vh;
+  height: auto;
+}
+
+.container {
+  text-align: center;
+}
+
+/* BOTTOM SECTION */
+
+#bottom {
+  height: auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  text-align: center;
+  background-color: #EFEFEF;
+}
+
+/* TEXT STYLING */
+
+h1 {
+  color: #0C3C2A;
+  font-weight: 700;
+  font-size: 3em;
+}
+
+h2, h3 {
+  color: #0C3C2A;
+  font-size: 1.2em;
+}
+
+/* NAVBAR STYLING */
+
+.navbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* flex-direction: row; */
+  /* align-items: center; */
+  justify-content: space-between;
+  padding: 0.5rem;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-sticky {
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: moveDown 0.5s ease-in-out;
 }
 
-@keyframes App-logo-spin {
+.navbar-button {
+  background-color: #00B04F;
+  border-color: #00B04F;
+  margin-left: 65vw;
+}
+
+.navbar--logo {
+  width: 12em;
+  margin-right: 0.5rem;
+}
+
+@keyframes moveDown {
   from {
-    transform: rotate(0deg);
+    transform: translateY(-5rem);
   }
   to {
-    transform: rotate(360deg);
+    transform: translateY(0rem);
   }
+}
+
+/* scroll-down prompt animation */
+
+.scroll-down {
+  position: absolute;
+  left: 50%;
+  bottom: 5vh;
+  display: block;
+  text-align: center;
+  font-size: 0px;
+  z-index: 100;
+  text-decoration: none;
+  text-shadow: 0;
+  width: 30px;
+  height: 30px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  z-index: 9;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%) rotate(45deg);
+  -moz-transform: translate(-50%, 0%) rotate(45deg);
+  transform: translate(-50%, 0%) rotate(45deg);
+  -webkit-animation: fade_move_down 4s ease-in-out infinite;
+  -moz-animation: fade_move_down 4s ease-in-out infinite;
+  animation: fade_move_down 4s ease-in-out infinite;
+}
+
+/*animated scroll arrow animation*/
+
+@-webkit-keyframes fade_move_down {
+  0% {
+    -webkit-transform: translate(0, -10px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 10px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fade_move_down {
+  0% {
+    -moz-transform: translate(0, -10px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: translate(0, 10px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fade_move_down {
+  0% {
+    transform: translate(0, -10px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 10px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/* IMPACT BOX CSS */
+
+.box {
+  border-radius: 5px;
+  background-color: #61dafb;
+  width: 20vw;
+  height: 10vh;
 }
