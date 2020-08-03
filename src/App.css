@@ -45,6 +45,17 @@ a {
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
+.line {
+  border-left: 6px solid #EFEFEF;
+  height:10vh;
+}
+.line:hover {
+  cursor: pointer;
+}
+#steps {
+  margin-left: 1.1vw;
+}
+
 
 /* AFFILIATE STORES SECTION */
 
