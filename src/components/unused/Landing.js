@@ -19,7 +19,7 @@ const Landing = ({ element }) => {
               <b>Add to Chrome</b> - It's Free
             </Button>
           </div>
-          <a href="#more-info">
+          <a href="#how-it-works">
             <div className="scroll-down"></div>
           </a>
           </div>

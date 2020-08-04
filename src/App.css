@@ -1,8 +1,14 @@
 /* DEFAULT TAGS */
-
+.row {
+  margin-right: 0px;
+}
 a {
   color: #00B04F;
   text-decoration: underline;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* LANDING SECTION */
@@ -79,19 +85,31 @@ a {
   text-align: center;
 }
 
-/* IMPACT SECTION */
+
+
+/* IMPACT/PROJECTS SECTION */
 #impact {
   background-color: white;
-  height: 40vh;
-  text-align: center;
+  height: auto;
 }
 
-/* PROJECTS SECTION */
-
-#projects {
-  background-color: white;
-  height: 50vw;
+.panel-default{
+  border-style: solid;
+  border-width: 3px;
+  border-color: #00B04F;
+ 
 }
+
+.panel-collapse {
+  max-height: 100vh;
+  overflow: hidden;
+  transition: max-height .5s ease;
+}
+.panel-close {
+  max-height: 0;
+}
+
+
 
 /* TESTIMONIAL SECTION */
 

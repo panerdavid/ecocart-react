@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import logo from "../img/logo.png";
 import Button from "react-bootstrap/Button";
+import logo from "../img/logo.png";
 import "../App.css";
 
 const Navbar = ({ sticky }) => (
