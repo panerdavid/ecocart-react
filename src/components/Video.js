@@ -1,54 +1,106 @@
 import React, { Component } from "react";
 import "../App.css";
 import ReactPlayer from "react-player";
-import { Button } from "react-bootstrap";
 
 export default class Video extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.player = React.createRef();
   }
 
-  ref = player => {
-    this.player = player
-  }
+  state = {
+    activeStep: 0,
+  };
+
+  clickStep = (step) => {
+    this.player.seekTo(step);
+    switch (step) {
+      case this.props.stepOne:
+        this.setState({ activeStep: 1 });
+        break;
+      case this.props.stepTwo:
+        this.setState({ activeStep: 2 });
+        break;
+      case this.props.stepThree:
+        this.setState({ activeStep: 3 });
+        break;
+      default:
+        this.setState({ activeStep: 0 });
+    }
+  };
+
+  handleProgress = (p) => {
+    console.log("onProgress", p.playedSeconds);
+    switch (p.playedSeconds.toFixed(0)) {
+      case 0:
+        this.setState({ activeStep: 0 });
+      case this.props.stepOne:
+        this.setState({ activeStep: 1 });
+        break;
+      case this.props.stepTwo:
+        this.setState({ activeStep: 2 });
+        break;
+      case this.props.stepThree:
+        this.setState({ activeStep: 3 });
+        break;
+    }
+  };
+
+  ref = (player) => {
+    this.player = player;
+  };
 
   render() {
+    // const { isActive } = this.state;
     return (
-      <div class="row">
+      <div className="row">
         <div>
-      
           <ReactPlayer
             ref={this.ref}
-            url="videos/works.mp4"
-            playing="true"
-            loop="true"
-            muted="true"
+            url={this.props.video}
+            playing={true}
+            loop={true}
+            muted={true}
+            progressInterval={1000}
+            onProgress={this.handleProgress}
           />
         </div>
-        <Button onClick={() => alert(this.player.getDuration())}>test</Button>
+
         <div>
           <h1> How it works</h1>
 
           <div id="steps">
-            <div class="row">
+            <div
+              className="row step"
+              onClick={() => this.clickStep(this.props.stepOne)}
+            >
               <span
-                className="line"
+                className={`line${this.state.activeStep == 1 ? "-active" : ""}`}
               ></span>
               <div>
                 <h3>1. Add in Seconds</h3>
                 <p>It's free and just takes 2 clicks.</p>
               </div>
             </div>
-            <div class="row">
-              <span className="line"></span>
+            <div
+              className="row step"
+              onClick={() => this.clickStep(this.props.stepTwo)}
+            >
+              <span
+                className={`line${this.state.activeStep == 2 ? "-active" : ""}`}
+              ></span>
               <div>
                 <h3>2. Shop like Normal</h3>
                 <p>We'll find the carbon emissions of your unique order.</p>
               </div>
             </div>
-            <div class="row">
-              <span className="line"></span>
+            <div
+              className="row step"
+              onClick={() => this.clickStep(this.props.stepThree)}
+            >
+              <span
+                className={`line${this.state.activeStep == 3 ? "-active" : ""}`}
+              ></span>
               <div>
                 <h3>3. Save the Planet</h3>
                 <p>
@@ -63,5 +115,3 @@ export default class Video extends Component {
     );
   }
 }
-
-

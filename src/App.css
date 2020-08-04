@@ -45,23 +45,44 @@ a {
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
-.line {
-  border-left: 6px solid #EFEFEF;
-  height:10vh;
-}
-.line:hover {
+
+.step:hover {
   cursor: pointer;
 }
+
+.line {
+  border-left: 3px solid #EFEFEF;
+  height: 10vh;
+}
+
+.line-active {
+  border-left: 6px solid green;
+  height: 10vh;
+}
+
 #steps {
   margin-left: 1.1vw;
 }
-
 
 /* AFFILIATE STORES SECTION */
 
 #affiliate-stores {
   background-color: #EAF6FA;
+  height: 40vh;
+  text-align: center;
+}
+
+/* WHY ECOCART SECTION */
+#why-ecocart {
+  background-color: #EAF6FA;
   height: 80vh;
+  text-align: center;
+}
+
+/* IMPACT SECTION */
+#impact {
+  background-color: white;
+  height: 40vh;
   text-align: center;
 }
 
@@ -102,12 +123,10 @@ a {
 
 .carousel-indicators li {
   background-color: #797979;
- 
 }
 
 .carousel-indicators .active {
   background-color: #029149;
-
 }
 
 .avatar {

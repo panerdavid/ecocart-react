@@ -6,7 +6,8 @@ import useSticky from "./hooks/useSticky";
 import Navbar from "./components/Navbar";
 import Landing from "./components/Landing";
 import Testimonial from "./components/Testimonial";
-import Video from "./components/Video"
+import Video from "./components/Video";
+import ProjectBox from "./components/ProjectBox";
 import Button from "react-bootstrap/Button";
 import avatar from "./img/avatar.jpg";
 import "./App.css";
@@ -19,15 +20,33 @@ function App() {
       <Navbar sticky={isSticky} />
       <Landing element={element} />
       <div className="App">
-        <section id="how-it-works">
-<Video></Video>
-        </section>
         <section id="affiliate-stores">
           <h1>Shop Sustainably at</h1>
           <h1>10,000+ stores!</h1>
         </section>
-        <section id="why-ecocart"></section>
-        <section id="impact"></section>
+        <section id="how-it-works">
+          <Video
+            video="videos/works.mp4"
+            stepOne="1"
+            stepTwo="4"
+            stepThree="10"
+          ></Video>
+        </section>
+        <section id="why-ecocart">
+          <h1>Why EcoCart?</h1>
+        </section>
+
+        <section id="impact">
+          <h1>EcoCart community impact</h1>
+          <ProjectBox
+            title="Protecting forests"
+            location="Massachusetts"
+            bulletOne="Protects a Spruce forest in Massachusetts that captures over 100,000 metric tonnes of harmful carbon dioxide every year"
+            bulletTwo="Protects habitat for a variety of threatened mammals, birs, and reptiles"
+            bulletThree="Experienced forest management project operator"
+          ></ProjectBox>
+        </section>
+
         <section id="projects"></section>
         <section id="testimonials">
           <h1>See why people love us</h1>

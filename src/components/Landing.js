@@ -20,7 +20,7 @@ const Landing = ({ element }) => {
             </Button>
           </div>
           <a href="#more-info">
-            <div class="scroll-down"></div>
+            <div className="scroll-down"></div>
           </a>
           </div>
         </section>
