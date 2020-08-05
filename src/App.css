@@ -23,7 +23,7 @@ html {
 }
 
 #content {
-  margin-top: 10vh;
+  margin-top: 12vh;
   text-align: center;
 }
 
@@ -35,7 +35,9 @@ html {
 .add-button {
   background-color: #00B04F;
   border-color: #00B04F;
+  padding: 1em;
   font-size: 1em;
+  margin-top: 3.5vh;
 }
 
 .add-button:hover {
@@ -43,6 +45,7 @@ html {
   border-color: #00B04F;
   color: #00B04F;
 }
+
 
 /* HOW IT WORKS SECTION */
 
@@ -125,46 +128,8 @@ h2, h3 {
   font-size: 1.2em;
 }
 
-/* NAVBAR STYLING */
 
-.navbar {
-  display: flex;
-  /* flex-direction: row; */
-  /* align-items: center; */
-  justify-content: space-between;
-  padding: 0.5rem;
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-}
 
-.navbar-sticky {
-  background: #ffffff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  animation: moveDown 0.5s ease-in-out;
-}
-
-.navbar-button {
-  background-color: #00B04F;
-  border-color: #00B04F;
-  margin-left: 65vw;
-}
-
-.navbar--logo {
-  width: 12em;
-  margin-right: 0.5rem;
-}
-
-@keyframes moveDown {
-  from {
-    transform: translateY(-5rem);
-  }
-  to {
-    transform: translateY(0rem);
-  }
-}
 
 /* scroll-down prompt animation */
 

@@ -1,17 +1,49 @@
+#title {
+    padding-bottom: 5vh;
+}
+
 .step:hover {
     cursor: pointer;
 }
 
 .line {
+    width: 2em;
     border-left: 3px solid #EFEFEF;
     height: 10vh;
+    padding-right: 1em;
 }
 
 .line-active {
-    border-left: 6px solid green;
+    width: 2em;
+    border-left: 3px solid green;
+    height: 10vh;
+    padding-right: 1em;
+}
+
+.line-container {
     height: 10vh;
 }
 
 #steps {
     margin-left: 1.1vw;
+}
+
+.step-content {
+    opacity: 60%;
+}
+
+.step-content-active {
+    opacity: 100%;
+}
+
+.step-one {
+    margin-top: 0.1vh;
+}
+
+.step-two {
+    margin-top: 1.5vh;
+}
+
+.step-three {
+    margin-top: 2.5vh;
 }

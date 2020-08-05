@@ -1,0 +1,44 @@
+.navbar {
+    padding: 0.5rem;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+}
+.navbar--logo-holder {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navbar-sticky {
+    background: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: moveDown 0.5s ease-in-out;
+}
+
+.navbar-button {
+    background-color: #00B04F;
+    border-color: #00B04F;
+    font-size: 1em;
+    padding: 1em;
+    margin-left: 60vw;
+}
+
+
+
+.navbar--logo {
+    width: 200px;
+    height: auto;
+}
+
+@keyframes moveDown {
+    from {
+        transform: translateY(-5rem);
+    }
+    to {
+        transform: translateY(0rem);
+    }
+}
