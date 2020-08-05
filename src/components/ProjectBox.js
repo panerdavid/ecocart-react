@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../App.css";
+import "../stylesheets/ProjectBox.css";
 
 export default class ProjectBox extends Component {
   constructor(props) {

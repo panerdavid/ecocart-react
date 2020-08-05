@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import "../App.css";
+import "../stylesheets/Testimonial.css";
 import StarIcon from "mdi-react/StarIcon";
 
 function Testimonial(props) {

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../App.css";
+import "../stylesheets/Video.css";
 import ReactPlayer from "react-player";
 
 export default class Video extends Component {
@@ -30,7 +31,6 @@ export default class Video extends Component {
   };
 
   handleProgress = (p) => {
-    console.log("onProgress", p.playedSeconds);
     switch (p.playedSeconds.toFixed(0)) {
       case 0:
         this.setState({ activeStep: 0 });
@@ -42,6 +42,8 @@ export default class Video extends Component {
         break;
       case this.props.stepThree:
         this.setState({ activeStep: 3 });
+        break;
+      default:
         break;
     }
   };

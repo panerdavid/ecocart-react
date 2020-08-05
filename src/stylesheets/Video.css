@@ -1,0 +1,17 @@
+.step:hover {
+    cursor: pointer;
+}
+
+.line {
+    border-left: 3px solid #EFEFEF;
+    height: 10vh;
+}
+
+.line-active {
+    border-left: 6px solid green;
+    height: 10vh;
+}
+
+#steps {
+    margin-left: 1.1vw;
+}

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../stylesheets/ImpactBox.css"
 export default class ImpactBox extends Component {
   render(props) {
     return (
