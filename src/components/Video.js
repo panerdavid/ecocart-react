@@ -55,7 +55,7 @@ export default class Video extends Component {
   render() {
     // const { isActive } = this.state;
     return (
-      <div className="row">
+      <div className="a">
         <div>
           <ReactPlayer
             ref={this.ref}
@@ -65,7 +65,6 @@ export default class Video extends Component {
             muted={true}
             progressInterval={1000}
             onProgress={this.handleProgress}
-            width={700}
           />
         </div>
 
@@ -78,7 +77,9 @@ export default class Video extends Component {
               onClick={() => this.clickStep(this.props.stepOne)}
             >
               <span
-                className={`line ${this.state.activeStep == 1 ? "line-active" : ""}`}
+                className={`line ${
+                  this.state.activeStep == 1 ? "line-active" : ""
+                }`}
               ></span>
               <div
                 className={`step-one step-content ${
@@ -94,7 +95,9 @@ export default class Video extends Component {
               onClick={() => this.clickStep(this.props.stepTwo)}
             >
               <span
-                className={`line ${this.state.activeStep == 2 ? "line-active" : ""}`}
+                className={`line ${
+                  this.state.activeStep == 2 ? "line-active" : ""
+                }`}
               ></span>
               <div
                 className={`step-two step-content ${
@@ -110,10 +113,12 @@ export default class Video extends Component {
               onClick={() => this.clickStep(this.props.stepThree)}
             >
               <span
-                className={`line ${this.state.activeStep == 3 ? "line-active" : ""}`}
+                className={`line ${
+                  this.state.activeStep == 3 ? "line-active" : ""
+                }`}
               ></span>
               <div
-                className= {`step-three step-content${
+                className={`step-three step-content${
                   this.state.activeStep == 3 ? "step-content-active" : ""
                 }`}
               >

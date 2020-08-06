@@ -11,13 +11,15 @@ export default class ProjectBox extends Component {
   }
   render() {
     return (
-      <div className="col-sm-4 col-sm-offset-4">
+     
         <div className="panel-group">
           <div className="panel panel-default">
             <div className="panel-heading">
-              <img alt=""></img>
-              <h4>{this.props.title}</h4>
-              <p>{this.props.location}</p>
+              <img id="project-photo" src={this.props.projectImg} alt=""></img>
+              <div id="heading-text" className="vertical-center">
+                <h4 id="project-title">{this.props.title}</h4>
+                <i>{this.props.location}</i>
+              </div>
             </div>
 
             <div
@@ -34,30 +36,37 @@ export default class ProjectBox extends Component {
                   })}
                 </ul>
               </div>
-              <h4>Verifications</h4>
-              <div className="project-verifications">
-                  {this.props.verifications.map((value, index) => {
-                      return <img src={value} alt=""></img>
-                  })}
+              <h4 className="box-label">Verifications</h4>
+              <div className="project-images">
+                {this.props.verifications.map((value, index) => {
+                  return (
+                    <img
+                      className="verification-image"
+                      src={value}
+                      alt=""
+                    ></img>
+                  );
+                })}
               </div>
-              <h4>Sustainable Devlopment</h4>
-              <div className="project-developments">
-              {this.props.developments.map((value, index) => {
-                      return <img src={value} alt=""></img>
-                  })}
+              <h4 className="box-label">Sustainable Devlopment</h4>
+              <div className="project-images">
+                {this.props.developments.map((value, index) => {
+                  return <img className="sd-image" src={value} alt=""></img>;
+                })}
               </div>
             </div>
-            <a
-              className="panel-title"
-              onClick={function () {
-                this.setState({ open: !this.state.open });
-              }.bind(this)}
-            >
-              {this.state.open ? "Hide" : "Learn More"}
-            </a>
+            <div className="center">
+              <a
+                className="toggle-expand"
+                onClick={function () {
+                  this.setState({ open: !this.state.open });
+                }.bind(this)}
+              >
+                {this.state.open ? "Hide ⋀" : "Learn More ⋁"}
+              </a>
+            </div>
           </div>
         </div>
-      </div>
      
     );
   }

@@ -4,7 +4,6 @@ import ImpactBox from "./components/ImpactBox";
 import FaqBox from "./components/Faq";
 import useSticky from "./hooks/useSticky";
 import Navbar from "./components/Navbar";
-// import Landing from "./components/Landing";
 import Testimonial from "./components/Testimonial";
 import Video from "./components/Video";
 import ProjectBox from "./components/ProjectBox";
@@ -15,9 +14,9 @@ import works from "./videos/works.mp4";
 import sample1 from "./img/sample1.png";
 import sample2 from "./img/sample2.png";
 import logo from "./img/logo.png";
+import sample3 from "./img/sample3.png";
 
 import "./App.css";
-import { Carousel } from "react-bootstrap";
 
 function App() {
   const { isSticky, element } = useSticky();
@@ -55,9 +54,10 @@ function App() {
         </section>
 
         <section id="impact">
-          <h1>EcoCart community impact</h1>
-          <div className="row">
+          <h1 className="center">EcoCart community impact</h1>
+          <div className="project-boxes">
             <ProjectBox
+            projectImg={sample3}
               title="Protecting forests"
               location="Massachusetts"
               bullets={[
@@ -68,9 +68,11 @@ function App() {
               verifications={[sample2, sample2]}
               developments={[sample1, sample1]}
             ></ProjectBox>
+     
             <ProjectBox
-              title="Providing clean water"
-              location="Cambodia"
+            projectImg={sample3}
+              title="Protecting forests"
+              location="Massachusetts"
               bullets={[
                 "Protects a Spruce forest in Massachusetts that captures over 100,000 metric tonnes of harmful carbon dioxide every year",
                 "Protects habitat for a variety of threatened mammals, birs, and reptiles",
@@ -79,9 +81,11 @@ function App() {
               verifications={[sample2, sample2]}
               developments={[sample1, sample1]}
             ></ProjectBox>
+     
             <ProjectBox
-              title="Creating wind energy"
-              location="Turkey"
+            projectImg={sample3}
+              title="Protecting forests"
+              location="Massachusetts"
               bullets={[
                 "Protects a Spruce forest in Massachusetts that captures over 100,000 metric tonnes of harmful carbon dioxide every year",
                 "Protects habitat for a variety of threatened mammals, birs, and reptiles",

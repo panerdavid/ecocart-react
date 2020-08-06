@@ -1,7 +1,7 @@
 /* DEFAULT TAGS */
-.row {
+/* .row {
   margin-right: 0px;
-}
+} */
 a {
   color: #00B04F;
   text-decoration: underline;
@@ -9,6 +9,9 @@ a {
 
 html {
   scroll-behavior: smooth;
+}
+.center {
+  text-align: center;
 }
 
 /* LANDING SECTION */
@@ -76,10 +79,13 @@ html {
 
 /* IMPACT/PROJECTS SECTION */
 #impact {
-  background-color: white;
+  background-color: #ffffff;
   height: auto;
 }
-
+.project-boxes {
+  display: flex;
+  justify-content: space-around;
+}
 
 
 
