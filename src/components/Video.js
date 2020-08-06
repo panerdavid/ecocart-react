@@ -118,7 +118,7 @@ export default class Video extends Component {
                 }`}
               ></span>
               <div
-                className={`step-three step-content${
+                className={`step-three step-content ${
                   this.state.activeStep == 3 ? "step-content-active" : ""
                 }`}
               >

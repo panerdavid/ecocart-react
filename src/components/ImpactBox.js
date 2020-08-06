@@ -4,6 +4,13 @@ import VisibilitySensor from "react-visibility-sensor";
 import "../stylesheets/ImpactBox.css";
 
 export default class ImpactBox extends Component {
+  state = {
+    visActive: true
+  }
+
+  toggleActive = () => {
+    this.state.visActive = false;
+  }
   
   render(props) {
     return (
@@ -15,11 +22,12 @@ export default class ImpactBox extends Component {
               start={0}
               end={this.props.count}
               delay={0.3}
-              redraw={true}
+              redraw={false}
               duration={5}
+              onEnd = {() => {this.setState({visActive: false})}}
             >
               {({ countUpRef, start }) => (
-                <VisibilitySensor onChange={start} delayedCall>
+                <VisibilitySensor onChange={start} active={this.state.visActive} delayedCall>
                   <span ref={countUpRef} />
                 </VisibilitySensor>
               )}
