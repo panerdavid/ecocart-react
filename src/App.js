@@ -39,8 +39,8 @@ function App() {
           <a href="#how-it-works">
             <div className="scroll-down"></div>
           </a>
-          </div>
-        </section>
+        </div>
+      </section>
       <div className="App">
         <section id="affiliate-stores">
           <h1>Shop Sustainably at</h1>
@@ -55,40 +55,63 @@ function App() {
 
         <section id="impact">
           <h1 className="center">EcoCart community impact</h1>
+          <div className="impact-box-container">
+            <ImpactBox
+              count="3,123,477"
+              subtitle={
+                <>
+                  lbs of CO<sub>2</sub> offset
+                </>
+              }
+              icon="🌎"
+            ></ImpactBox>
+            <div class="spacer"></div>
+            <ImpactBox
+              count="6,247"
+              subtitle="trees saved"
+              icon="🌲"
+            ></ImpactBox>
+          </div>
+          <div className="impact-subtitle-container">
+            <h2 className="center impact-sub-heading">
+              <span>We do this by...</span>
+            </h2>
+          </div>
+
           <div className="project-boxes">
             <ProjectBox
-            projectImg={sample3}
+              projectImg={sample3}
               title="Protecting forests"
               location="Massachusetts"
               bullets={[
                 "Protects a Spruce forest in Massachusetts that captures over 100,000 metric tonnes of harmful carbon dioxide every year",
-                "Protects habitat for a variety of threatened mammals, birs, and reptiles",
+                "Protects habitat for a variety of threatened mammals, firs, and reptiles",
                 "Experienced forest management project operator",
               ]}
               verifications={[sample2, sample2]}
               developments={[sample1, sample1]}
             ></ProjectBox>
-     
+
             <ProjectBox
-            projectImg={sample3}
+              projectImg={sample3}
               title="Protecting forests"
               location="Massachusetts"
               bullets={[
                 "Protects a Spruce forest in Massachusetts that captures over 100,000 metric tonnes of harmful carbon dioxide every year",
-                "Protects habitat for a variety of threatened mammals, birs, and reptiles",
+                "Protects habitat for a variety of threatened mammals, firs, and reptiles",
                 "Experienced forest management project operator",
               ]}
               verifications={[sample2, sample2]}
               developments={[sample1, sample1]}
             ></ProjectBox>
-     
+
             <ProjectBox
-            projectImg={sample3}
+              projectImg={sample3}
               title="Protecting forests"
               location="Massachusetts"
               bullets={[
                 "Protects a Spruce forest in Massachusetts that captures over 100,000 metric tonnes of harmful carbon dioxide every year",
-                "Protects habitat for a variety of threatened mammals, birs, and reptiles",
+                "Protects habitat for a variety of threatened mammals, firs, and reptiles",
                 "Experienced forest management project operator",
               ]}
               verifications={[sample2, sample2]}
@@ -158,13 +181,6 @@ function App() {
             <b>Add to Chrome</b> - It's Free
           </Button>
         </section>
-         <ImpactBox
-          count="3,123,477"
-          subtitle="lbs of CO2 offset"
-          icon="🌎"
-        ></ImpactBox>
-        <ImpactBox count="6,247" subtitle="trees saved" icon="🌲"></ImpactBox>
-      
       </div>
     </>
   );

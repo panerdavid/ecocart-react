@@ -48,31 +48,34 @@ html {
   border-color: #00B04F;
   color: #00B04F;
 }
-
-
-/* HOW IT WORKS SECTION */
-
-#how-it-works {
-  height: auto;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-}
-
-
-
 /* AFFILIATE STORES SECTION */
 
 #affiliate-stores {
   background-color: #EAF6FA;
   height: 40vh;
   text-align: center;
+  padding: 5vh 0;
 }
+
+
+/* HOW IT WORKS SECTION */
+
+#how-it-works {
+  height: auto;
+  padding: 5vh 0;
+
+}
+
+
+
+
 
 /* WHY ECOCART SECTION */
 #why-ecocart {
   background-color: #EAF6FA;
   height: 80vh;
   text-align: center;
+  padding: 5vh 0;
 }
 
 
@@ -81,7 +84,33 @@ html {
 #impact {
   background-color: #ffffff;
   height: auto;
+  padding: 5vh 0;
 }
+
+.impact-box-container {
+  padding-top: 3vh;
+  padding-bottom: 5vh;
+  display: flex;
+  justify-content: center;
+}
+
+.spacer {
+  width: 8vw;
+}
+.impact-subtitle-container {
+  padding-bottom: 5vh;
+}
+.impact-sub-heading {
+  width: 100%; 
+  border-bottom: 1px solid #000; 
+  line-height: 0.1em;
+} 
+
+.impact-sub-heading span { 
+   background:#fff; 
+   padding:0 10px; 
+}
+
 .project-boxes {
   display: flex;
   justify-content: space-around;
@@ -93,7 +122,7 @@ html {
 /* TESTIMONIAL SECTION */
 
 #testimonials {
-  padding-top: 5vw;
+  padding: 5vh 0;
   text-align: center;
   background-color: #EAF6FA;
   height: auto;

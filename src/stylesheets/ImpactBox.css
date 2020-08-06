@@ -1,6 +1,23 @@
 .box {
-    border-radius: 5px;
-    background-color: #61dafb;
-    width: 20vw;
-    height: 10vh;
+  display: flex;
+    border-radius: 15px;
+    background-color: #80B5D5;
+    width: 30vw;
+    height: 20vh;
+  }
+  #icon {
+   font-size: 6em;
+    padding: 2vh 3vw;
+  }
+  #count {
+    font-weight: 600;
+    font-size: 3rem;
+    color: white;
+  }
+  #stat {
+    color: white;
+    font-weight: 600;
+  }
+  .impact-text {
+    padding: 3vh 0;
   }
