@@ -33,11 +33,11 @@ justify-content: center;
 }
 
 .step-content {
-    opacity: 60%;
+    opacity: 0.6;
 }
 
 .step-content-active {
-    opacity: 100%;
+    opacity: 1;
 }
 
 .step-one {
