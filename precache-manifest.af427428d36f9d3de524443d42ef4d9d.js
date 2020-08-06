@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2317c9f63bc8e5ed229cceb2fef9221c",
+    "revision": "e52b17c24a9a67166121a6c0dfc72e36",
     "url": "/ecocart-react/index.html"
   },
   {
-    "revision": "3e383b669b08086e37e2",
+    "revision": "4a43a2da5a37b90ecb40",
     "url": "/ecocart-react/static/css/2.829c9cb5.chunk.css"
   },
   {
-    "revision": "31377a287a291776f9ce",
-    "url": "/ecocart-react/static/css/main.62ff23cf.chunk.css"
+    "revision": "e3e09601055b93a7ca89",
+    "url": "/ecocart-react/static/css/main.a5274896.chunk.css"
   },
   {
-    "revision": "3e383b669b08086e37e2",
-    "url": "/ecocart-react/static/js/2.8de76231.chunk.js"
+    "revision": "4a43a2da5a37b90ecb40",
+    "url": "/ecocart-react/static/js/2.5733ca88.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/ecocart-react/static/js/2.8de76231.chunk.js.LICENSE.txt"
+    "url": "/ecocart-react/static/js/2.5733ca88.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "31377a287a291776f9ce",
-    "url": "/ecocart-react/static/js/main.cfdc2e53.chunk.js"
+    "revision": "e3e09601055b93a7ca89",
+    "url": "/ecocart-react/static/js/main.25afc501.chunk.js"
   },
   {
     "revision": "5fd70b3020f08a57531e",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "99b0e4e73bad882238b9accef2ef7435",
     "url": "/ecocart-react/static/media/sample2.99b0e4e7.png"
+  },
+  {
+    "revision": "00d9dfb211c1f00f0cc3dcd8bab0f2ef",
+    "url": "/ecocart-react/static/media/sample3.00d9dfb2.png"
   },
   {
     "revision": "3d00d7615394f4a53661d7ae1924af2b",
