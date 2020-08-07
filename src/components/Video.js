@@ -55,7 +55,7 @@ export default class Video extends Component {
 
   render() {
     return (
-      <div id="react-component">
+      <div id="video-component">
         <div>
           <ReactPlayer
             ref={this.ref}

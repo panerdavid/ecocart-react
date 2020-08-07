@@ -15,7 +15,7 @@ export default class ImpactBox extends Component {
   render(props) {
     return (
       <div className="box">
-        <h1 id="icon">{this.props.icon}</h1>
+        <img src={this.props.icon} id="icon"></img>
         <div className="center impact-text">
           <h2 id="count">
             <CountUp
