@@ -5,11 +5,11 @@ import "../stylesheets/ImpactBox.css";
 
 export default class ImpactBox extends Component {
   state = {
-    visActive: true,
+    start: this.props.start,
   };
 
-  toggleActive = () => {
-    this.setState({ visActive: false });
+  endCount = () => {
+    this.props.start = this.state.count;
   };
 
   render(props) {
@@ -19,13 +19,16 @@ export default class ImpactBox extends Component {
         <div className="center impact-text">
           <h2 id="count">
             <CountUp
-              start={0}
+              start={this.state.start}
               end={this.props.count}
-              delay={0.3}
+              delay={0.2}
               redraw={false}
-              duration={5}
+              duration={this.props.duration}
               onEnd={() => {
-                this.setState({ visActive: false });
+                this.setState({ start: this.props.count });
+              }}
+              onUpdate={() => {
+                this.setState({ start: this.props.count });
               }}
             >
               {({ countUpRef, start }) => (

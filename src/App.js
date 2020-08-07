@@ -71,7 +71,9 @@ function App() {
         <h1 className="center">EcoCart community impact</h1>
         <div className="impact-box-container">
           <ImpactBox
+          start={0}
             count={3123477}
+            duration={4}
             subtitle={
               <>
                 lbs of CO<sub>2</sub> offset
@@ -81,7 +83,9 @@ function App() {
           ></ImpactBox>
           <div class="spacer"></div>
           <ImpactBox
+          start={0}
             count={6247}
+            duration={3}
             subtitle="trees saved"
             icon={tree}
           ></ImpactBox>
