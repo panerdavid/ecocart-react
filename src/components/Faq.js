@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../stylesheets/Faq.css";
 import Faq from "react-faq-component"; //DOCUMENTATION: https://www.npmjs.com/package/react-faq-component
 
 
