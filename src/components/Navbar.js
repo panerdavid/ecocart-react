@@ -1,4 +1,7 @@
-import React, { Component } from "react";
+// Based off example here: https://www.ibrahima-ndaw.com/blog/build-a-sticky-nav-with-react/
+// sticky effect found in "../hooks/useSticky.js"
+
+import React from "react";
 import Button from "react-bootstrap/Button";
 import logo from "../img/logo.png";
 import "../stylesheets/Navbar.css";

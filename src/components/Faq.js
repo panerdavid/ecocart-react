@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Faq from "react-faq-component";
+import Faq from "react-faq-component"; //DOCUMENTATION: https://www.npmjs.com/package/react-faq-component
 
 const data = {
   title: "Frequently Asked Questions",

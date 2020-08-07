@@ -1,17 +1,17 @@
 import React, { Component } from "react";
-import CountUp from "react-countup";
-import VisibilitySensor from "react-visibility-sensor";
+import CountUp from "react-countup"; //DOCUMENTATION: https://www.npmjs.com/package/react-countup
+import VisibilitySensor from "react-visibility-sensor"; //DOCUMENTATION: https://www.npmjs.com/package/react-visibility-sensor
 import "../stylesheets/ImpactBox.css";
 
 export default class ImpactBox extends Component {
   state = {
-    visActive: true
-  }
+    visActive: true,
+  };
 
   toggleActive = () => {
-    this.state.visActive = false;
-  }
-  
+    this.setState({ visActive: false });
+  };
+
   render(props) {
     return (
       <div className="box">
@@ -24,10 +24,16 @@ export default class ImpactBox extends Component {
               delay={0.3}
               redraw={false}
               duration={5}
-              onEnd = {() => {this.setState({visActive: false})}}
+              onEnd={() => {
+                this.setState({ visActive: false });
+              }}
             >
               {({ countUpRef, start }) => (
-                <VisibilitySensor onChange={start} active={this.state.visActive} delayedCall>
+                <VisibilitySensor
+                  onChange={start}
+                  active={this.state.visActive}
+                  delayedCall
+                >
                   <span ref={countUpRef} />
                 </VisibilitySensor>
               )}

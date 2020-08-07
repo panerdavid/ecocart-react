@@ -4,13 +4,13 @@ function useSticky() {
   const [isSticky, setSticky] = useState(false)
   const element = useRef(null)
 
+  //change where navbar appears here
   const handleScroll = () => {
     window.scrollY > element.current.getBoundingClientRect().bottom + 500
       ? setSticky(true)
       : setSticky(false)
   }
 
-  // This function handle the scroll performance issue
   const debounce = (func, wait = 20, immediate = true) => {
     let timeOut
     return () => {

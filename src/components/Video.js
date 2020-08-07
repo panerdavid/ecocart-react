@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../App.css";
 import "../stylesheets/Video.css";
-import ReactPlayer from "react-player";
+import ReactPlayer from "react-player"; //DOCUMENTATION: https://www.npmjs.com/package/react-player
 
 export default class Video extends Component {
   constructor(props) {
@@ -34,6 +34,7 @@ export default class Video extends Component {
     switch (p.playedSeconds.toFixed(0)) {
       case 0:
         this.setState({ activeStep: 0 });
+        break;
       case this.props.stepOne:
         this.setState({ activeStep: 1 });
         break;
@@ -53,9 +54,8 @@ export default class Video extends Component {
   };
 
   render() {
-    // const { isActive } = this.state;
     return (
-      <div className="a">
+      <div id="react-component">
         <div>
           <ReactPlayer
             ref={this.ref}
@@ -78,12 +78,12 @@ export default class Video extends Component {
             >
               <span
                 className={`line ${
-                  this.state.activeStep == 1 ? "line-active" : ""
+                  this.state.activeStep === 1 ? "line-active" : ""
                 }`}
               ></span>
               <div
                 className={`step-one step-content ${
-                  this.state.activeStep == 1 ? "step-content-active" : ""
+                  this.state.activeStep === 1 ? "step-content-active" : ""
                 }`}
               >
                 <h3>1. Add in Seconds</h3>
@@ -96,12 +96,12 @@ export default class Video extends Component {
             >
               <span
                 className={`line ${
-                  this.state.activeStep == 2 ? "line-active" : ""
+                  this.state.activeStep === 2 ? "line-active" : ""
                 }`}
               ></span>
               <div
                 className={`step-two step-content ${
-                  this.state.activeStep == 2 ? "step-content-active" : ""
+                  this.state.activeStep === 2 ? "step-content-active" : ""
                 }`}
               >
                 <h3>2. Shop like Normal</h3>
@@ -114,12 +114,12 @@ export default class Video extends Component {
             >
               <span
                 className={`line ${
-                  this.state.activeStep == 3 ? "line-active" : ""
+                  this.state.activeStep === 3 ? "line-active" : ""
                 }`}
               ></span>
               <div
                 className={`step-three step-content ${
-                  this.state.activeStep == 3 ? "step-content-active" : ""
+                  this.state.activeStep === 3 ? "step-content-active" : ""
                 }`}
               >
                 <h3>3. Save the Planet</h3>

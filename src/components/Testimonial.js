@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel from "react-bootstrap/Carousel";
+import Carousel from "react-bootstrap/Carousel"; //DOCUMENTATION: https://react-bootstrap.github.io/components/carousel/
 import "../App.css";
 import "../stylesheets/Testimonial.css";
 import StarIcon from "mdi-react/StarIcon";
